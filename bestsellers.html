@@ -1,0 +1,214 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+   background-color: #cccccc;
+  background-image: radial-gradient(red, yellow, green);
+}
+
+html {
+  box-sizing: border-box;
+  
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0.5px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: blue;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: red;
+}
+</style>
+</head>
+<body>
+
+
+<h1>BESTSELLERS</h1>
+<p> Showing <u>10</u> results</p>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="C:\Users\ashia\Desktop\6th sem\MODERN WEB LAB\work.jpg" alt="Jane" style="width:300px;height:300px">
+      <div class="container">
+        <h2>Show your work</h2>
+        <p class="title">By: Austin Kleon Publisher: Workman Publishing</p>
+        <p>Binding: Paperback</p>
+        <p>Release: 06 March 2014</p>
+         <p>Language: English</p>
+         <p>Rs: 769</p>
+        <p><button class="button">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="C:\Users\ashia\Desktop\6th sem\MODERN WEB LAB\titan.jpg" alt="Mike" style="width:300px;height:300px">
+      <div class="container">
+        <h2>Attack on Titan 1</h2>
+        <p class="title">By: Hajime Isayama Publisher: Kodansha Comics</p>
+        <p>Binding: Paperback</p>
+        <p>Release: 19 July 2012</p>
+         <p>Language: English</p>
+         <p>Rs: 551</p>
+        <p><button class="button">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="C:\Users\ashia\Desktop\6th sem\MODERN WEB LAB\jay.jpg" alt="John" style="width:300px;height:300px">
+      <div class="container">
+        <h2>Think Like A Monk</h2>
+        <p class="title">By: Jay Shetty</p>
+         <p>Binding: Paperback</p>
+        <p>Release: 19 July 2012</p>
+         <p>Language: English</p>
+          <p>Rs: 324</p>
+        <p><button class="button">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+<div class="column">
+    <div class="card">
+      <img src="C:\Users\ashia\Desktop\6th sem\MODERN WEB LAB\artist.jpg" alt="Mike" style="width:300px;height:300px">
+      <div class="container">
+        <h2>Steal Like an Artist</h2>
+        <p class="title">By: Austin Kleon Publisher: Workman Publishing</p>
+        <p>Binding: Paperback</p>
+        <p>Release: 28 Feb 2012</p>
+         <p>Language: English</p>
+         <p>Rs: 768</p>
+        <p><button class="button">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+ <div class="column">
+    <div class="card">
+      <img src="C:\Users\ashia\Desktop\6th sem\MODERN WEB LAB\ikigai.jpg" alt="John" style="width:300px;height:300px">
+      <div class="container">
+        <h2>Ikigai</h2>
+        <p class="title">By: Francesc Miralles Publisher: Cornerstone</p>
+         <p>Binding: Hardback</p>
+        <p>Release: 07 Sep 2017</p>
+         <p>Language: English</p>
+          <p>Rs: 391</p>
+        <p><button class="button">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+ <div class="column">
+    <div class="card">
+      <img src="C:\Users\ashia\Desktop\6th sem\MODERN WEB LAB\grow.jpg" alt="John" style="width:300px;height:300px">
+      <div class="container">
+        <h2>Think And Grow Rich</h2>
+        <p class="title">By: Napolean Hill</p>
+         <p>Binding: Paperback</p>
+        <p>Release: 2014</p>
+         <p>Language: English</p>
+          <p>Rs: 105</p>
+        <p><button class="button">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+ <div class="column">
+    <div class="card">
+      <img src="C:\Users\ashia\Desktop\6th sem\MODERN WEB LAB\sudha.jpg" alt="John" style="width:300px;height:300px">
+      <div class="container">
+        <h2>Grandma's Bag of Stories</h2>
+        <p class="title">By: Sudha Murty, Sudha</p>
+         <p>Binding: Paperback</p>
+        <p>Release: 01 Jan 2015</p>
+         <p>Language: English</p>
+          <p>Rs: 150</p>
+        <p><button class="button">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+<div class="column">
+    <div class="card">
+      <img src="C:\Users\ashia\Desktop\6th sem\MODERN WEB LAB\rules.jpg" alt="John" style="width:300px;height:300px">
+      <div class="container">
+        <h2>12 rules for Life</h2>
+        <p class="title">By: Jordan B. PetersonPublisher: Penguin Books Ltd</p>
+         <p>Binding: Paperback</p>
+        <p>Release: 16 Jan 2018</p>
+         <p>Language: English</p>
+          <p>Rs: 1,068</p>
+        <p><button class="button">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+<div class="column">
+    <div class="card">
+      <img src="C:\Users\ashia\Desktop\6th sem\MODERN WEB LAB\harry.jpg" alt="John" style="width:300px;height:300px">
+      <div class="container">
+        <h2>Harry Potter and the Philosopher.s Stone</h2>
+        <p class="title">By: J. K. Rowling, J.K. RowlingPublisher: Bloomsbury Publishing PLC</p>
+         <p>Binding: Paperback</p>
+        <p>Release: 01 Sep 2014</p>
+         <p>Language: English</p>
+          <p>Rs: 315</p>
+        <p><button class="button">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
