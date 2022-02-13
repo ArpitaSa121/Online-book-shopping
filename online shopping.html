@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background-image: radial-gradient(#5499C7, #F4ECF7);;
+  background-color: #cccccc;
+  
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-image: linear-gradient(to right, #D7BDE2 , #F7DC6F);
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background: "C:\Users\ashia\Desktop\6th sem\MODERN WEB LAB\medicine.jpg";
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding:30px;
+  text-align: center;
+  background-color: #ddd;
+}
+
+.float-container {
+    border: 3px solid #fff;
+    padding: 20px;
+}
+
+.float-child {
+    width: 420px;
+    float: left;
+    padding: 20px;
+    border: 2px solid white;
+    
+}  
+.button {
+  padding: 10px 15px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.container {
+  border-radius: 5px;
+  background-color: #F9E79F;
+  padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>THE LAST CHAPTER</h1>
+  <p><b>"The right bookspot for all"</b></p>
+</div>
+
+<div class="navbar">
+  <a href="file:///C:/Users/ashia/Desktop/online%20book/register.html#">Register</a>
+  <a href="#">Books</a>
+  <a href="#">New Arrivals</a>
+  <a href="#">Pre-order</a>
+ <a href="file:///C:/Users/ashia/Desktop/online%20book/bestsellers.html">Bestsellers</a>
+ <a href="#">Textbooks</a>
+<a href="#">Featured Authors</a>
+  <a href="file:///C:/Users/ashia/Desktop/online%20book/cart.html" class="right">My Cart</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h1>PRE-ORDER BOOKS</h1>
+<div class="container">
+     <form action="/action_page.php">
+  <label for="fname">First name:</label><br><br>
+  <input type="text" id="fname" name="fname" ><br><br>
+  <label for="lname">Last name:</label><br><br>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="email">Email:</label><br><br>
+  <input type="text" id="email" name="email"><br><br>
+<label for="lname">Telephone no.</label><br><br>
+  <input type="text" id="lname" name="lname"><br><br>
+
+<h3>FORMAT:</h3>
+
+<input type="radio" id="b1" name="b1" value="b1">
+  <label for="b1">audiobook</label><br>
+  <input type="radio" id="b2" name="b2" value="b2">
+  <label for="b2">paperback</label><br>  
+  <input type="radio" id="b3" name="b3" value="b3">
+  <label for="b3">E-book</label><br><br>
+<h1>Books available for Pre-Order:</h1>
+
+
+
+
+   <label for="doctor">Choose the book available:</label>
+  <select id="doctor" name="doctor">
+    <option value="Dr. Anand">The Monk who sold his Ferrari</option>
+    <option value="Dr. Roy">Little Things</option>
+    <option value="Dr. P. Sarker">Wings of Fire</option>
+    <option value="Dr. Subramanium">A Touch Of Eternity</option>
+  </select><br><br>
+   <button class="button">Submit</button>
+  
+
+
+ 
+  
+</form>
+</div>
+
+ 
+    
+    
+    
+   
+
+ 
+
+    
+    
+  </div>
+  <div class="main">
+    <h1>New York Times Bestseller</h1>
+    
+     <p style="float: left; font-size: 12pt; text-align: center; width: 30%; margin-right: 1%; margin-bottom: 0.5em;"><img src="C:\Users\ashia\Desktop\6th sem\MODERN WEB LAB\shadow.jpg" style="width:150px;height:150px"><br>Shadow and Bone<br>Rs. 618<br><br><button type="submit" form="nameform" value="Submit">Add to Cart</button></p>
+    <p style="float: left; font-size: 12pt; text-align: center; width: 30%; right: 1%; margin-bottom: 0.5em;"><img src="C:\Users\ashia\Desktop\6th sem\MODERN WEB LAB\song.jpg" style="width:150px;height:150px"><br>The Song of Achilles<br>Rs. 851<br><br><button type="submit" form="nameform" value="Submit">Add to Cart</button></p>
+   <p style="float: left; font-size: 12pt; text-align: center; width: 30%; margin-right: 1%; margin-bottom: 0.5em;"><img src="C:\Users\ashia\Desktop\6th sem\MODERN WEB LAB\siege.jpg" style="width:150px;height:150px"><br>Siege and Storm<br>Rs. 660<br><br><button type="submit" form="nameform" value="Submit">Add to Cart</button></p>
+  <p style="float: left; font-size: 12pt; text-align: center; width: 30%; margin-right: 1%; margin-bottom: 0.5em;"><img src="C:\Users\ashia\Desktop\6th sem\MODERN WEB LAB\karma.jpg" style="width:150px;height:150px"><br>karma<br>Rs. 1,310<br><br><button type="submit" form="nameform" value="Submit">Add to Cart</button></p>
+ <p style="float: left; font-size: 12pt; text-align: center; width: 30%; margin-right: 1%; margin-bottom: 0.5em;"><img src="C:\Users\ashia\Desktop\6th sem\MODERN WEB LAB\truths.jpg" style="width:150px;height:150px"><br>The Truths We Hold<br>Rs. 1,367<br><br><button type="submit" form="nameform" value="Submit">Add to Cart</button></p>
+  <p style="float: left; font-size: 12pt; text-align: center; width: 30%; margin-right: 1%; margin-bottom: 0.5em;"><img src="C:\Users\ashia\Desktop\6th sem\MODERN WEB LAB\wolves.jpg" style="width:150px;height:150px"><br>Rule Of Wolves<br>Rs. 1,488<br><br><button type="submit" form="nameform" value="Submit">Add to Cart</button></p>
+ <p style="clear: both;"><br><br>
+     
+    
+    <br>
+    <h1>BOX SETS</h1>
+    <h5></h5>
+    <style>
+table, th, td {
+  border:1px solid black;
+  background-color: #96D4D4;
+  border-color: #CD5C5C;
+}
+</style>
+ <table style="width:100%">
+  <tr>
+    <th>Book Name</th>
+    <th>Author</th>
+    <th>Publisher</th>
+     <th>Price(In Rs.)</th>
+  </tr>
+  <tr>
+    <td>Hobbit and The Lord of the Rings</td>
+    <td>JRR Tolkien, J. R. R. Tolkien, J. R. R Tolkien</td>
+     <td>HarperCollins Publisher</td>
+     <td>1,234</td>
+     
+    
+     
+     
+  </tr>
+  <tr>
+    <td>The Mortal Instruments 1-6 Copy</td>
+    <td>Cassandra Clare</td>
+    <td>Penguin books</td>
+    <td>1,835</td>
+     
+  </tr>
+   <tr>
+    <td>Sherlock Homes(5 books)</td>
+    <td>Sir Arthur Conan Doyle</td>
+    <td>pustak Mahal</td>
+    <td>391</td>
+     
+  </tr>
+  <tr>
+    <td>Diary of a Wimpy Kid</td>
+    <td>Jeff Kinney</td>
+    <td>Penguin Books Ltd.</td>
+    <td>1,950</td>
+     
+  </tr>
+  <tr>
+    <td>Nancy Drew Starter Set</td>
+    <td>Carolyn Keene</td>
+    <td>Grosset & Dunalp</td>
+    <td>2,982</td>
+     
+  </tr>
+   
+</table>
+
+  </div>
+</div>
+
+<div class="footer">
+  <h2>The Last Chapter.com</h2>
+
+    <div class="float-child">
+    <div class="green"></div>
+<h3><u>Company</u></h3>
+    <p>About us</p>
+    <p>Career</p>
+    <p>Blog</p>
+    <p>Contact us</p>
+    
+    
+  </div>
+  
+  <div class="float-child">
+    <div class="blue"></div>
+    <h3><u>Policies</u></h3>
+     <p>Privacy Policies</p>
+    <p>Terms of Use</p>
+    <p>Secure Shopping</p>
+    <p>Copyright policy</p>
+  </div>
+    <div class="float-child">
+    <div class="blue"></div>
+     <h3><u>Help</u></h3>
+  <p>Payment</p>
+    <p>Shipping</p>
+    <p>Return</p>
+    <p>FAQ</p>
+  </div><br><br><br><br>
+   <p style="clear: both;"><br><br>
+ 
+ <h4>Address:SR Ecommerce Factory Pvt. Ltd., 2/14, ground floor , Ansari road , Daryaganj Delhi 110002 | Email: customerservice@bookswagon.com| Phone#: 011-41521153</h4>
+ 
+</div>
+
+</body>
+</html>
